@@ -3,7 +3,7 @@ import { createContext, useEffect, useState } from "react";
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
-  const url = "http://localhost:8080";
+  const url = "https://eateazy-backend.onrender.com/";
   const [token, setToken] = useState("");
 
   useEffect(() => {

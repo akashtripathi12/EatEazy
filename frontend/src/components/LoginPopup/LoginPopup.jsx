@@ -68,7 +68,7 @@ const LoginPopup = ({ setShowLogin }) => {
         NewUrl += "/api/admin/dashboard";
         const resToken = await axios.post(NewUrl, { token: token });
         if (resToken.data.success) {
-          window.open("http://localhost:5174/");
+          window.open("https://eateazy-admin.onrender.com/");
         } else {
           console.log(resToken.data.message);
         }
@@ -79,7 +79,7 @@ const LoginPopup = ({ setShowLogin }) => {
         if (response.data.success) {
           setShowLogin(false);
           const token = response.data.token;
-          window.open(`http://localhost:5174/?token=${token}`);
+          window.open(`https://eateazy-admin.onrender.com/?token=${token}`);
           setToken("");
         } else {
           alert(response.data.message);

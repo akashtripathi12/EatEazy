@@ -16,4 +16,4 @@ export const assets = {
   logout_icon,
 };
 
-export const url = "http://localhost:8080";
+export const url = "https://eateazy-backend.onrender.com/";
